@@ -1,12 +1,24 @@
 <html>  
-<head>  
-    <title>upload</title>  
+<head> 
+    
+    <title>Upload</title>
 </head>  
-<body>  
+<body> 
     <form action = "/success" method = "post" enctype="multipart/form-data">  
         <input type="file" name="file" multiple />  
         <input type = "submit" value="Upload">  
-    </form>  
+    </form>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>  
 </body>  
+<footer>
+</footer>
 </html>  
 
+
+
+    
+        
+    
